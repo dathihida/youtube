@@ -22,7 +22,6 @@
 				<iframe class="video_responsive" width="100%" height="573px"
 					id="tm-video" src="https://www.youtube.com/embed/${video.href }">
 				</iframe>
-					<input name="views_views" value="${video.views}">
 				<div class="p-1 pt-3">
 					<div class="title">${video.title }</div>
 					<div class="row mt-2 border-bottom">
