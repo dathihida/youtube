@@ -22,10 +22,6 @@ public class statsDaoImpl extends abstractDao<Object[]> implements StatsDao{
 		List<VideoLikedInfo> result = new ArrayList<>();
 		objects.forEach(object ->{
 			VideoLikedInfo videoLikeInfo = setDataVideoLikeInfo(object);
-//			videoLikeInfo.setVideoId((Integer)object[0]);
-//			videoLikeInfo.setTitle((String) object[1]);
-//			videoLikeInfo.setHref((String) object[2]);
-//			videoLikeInfo.setTotalLike((Integer) object[3]);
 			result.add(videoLikeInfo);
 		});
 		return result;

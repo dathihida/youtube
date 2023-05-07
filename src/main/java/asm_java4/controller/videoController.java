@@ -65,7 +65,11 @@ public class videoController extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub;
 		Video video = videoService.findByHref(href);
+		Integer viewss = video.getViews();
+		System.out.println(video.getViews()+ "dd");
+		video.setViews(viewss + 1);
 		
+		Video videoviews = videoService.update(video);
 		List<Video> videoList = videoService.findAll();
 		req.setAttribute("video", video);
 		req.setAttribute("videoList", videoList);
